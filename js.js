@@ -1,11 +1,3 @@
-jsql
-====
-
-Sintaxis SQL para recorrer JSON
-
-Ejemplos:
-
-////SELECT////
 var jSql,
 	query;
 
@@ -14,21 +6,20 @@ jSql = JSql()
 	.from(data);
 query = jSql.query();
 
-////UPDATE////
 JSql()
 	.update(data)
 	.set('phone="lolo", picture="lala", age=20, picture=true')
 	.query();
 
-////DELETE////
 JSql()
 	.delete(data)
 	.where('picture=true')
 	.query();
 
-////INSERT////
 JSql()
 	.insert(data)
 	.into('newPicture')
 	.values('Valor nuevo')
 	.query();
+
+console.dir(data);
