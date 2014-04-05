@@ -4,7 +4,7 @@ jsql
 Sintaxis SQL para recorrer JSON
 
 Ejemplos:
-
+```javascript
 ////SELECT////
 var jSql,
     query;
@@ -32,3 +32,4 @@ JSql()
     .into('newPicture')
     .values('Valor nuevo')
     .query();
+```
