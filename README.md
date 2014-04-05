@@ -7,28 +7,28 @@ Ejemplos:
 
 ////SELECT////
 var jSql,
-	query;
+    query;
 
 jSql = JSql()
-	.select('phone, picture, age', 'tags')
-	.from(data);
+    .select('phone, picture, age', 'tags')
+    .from(data);
 query = jSql.query();
 
 ////UPDATE////
 JSql()
-	.update(data)
-	.set('phone="lolo", picture="lala", age=20, picture=true')
-	.query();
+    .update(data)
+    .set('phone="lolo", picture="lala", age=20, picture=true')
+    .query();
 
 ////DELETE////
 JSql()
-	.delete(data)
-	.where('picture=true')
-	.query();
+    .delete(data)
+    .where('picture=true')
+    .query();
 
 ////INSERT////
 JSql()
-	.insert(data)
-	.into('newPicture')
-	.values('Valor nuevo')
-	.query();
+    .insert(data)
+    .into('newPicture')
+    .values('Valor nuevo')
+    .query();
